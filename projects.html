@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <title>Referanslar | Kutay Asansör Kayseri</title>
+    <meta name="description"
+        content="Kutay Asansör Kayseri referansları. Tamamlanan asansör bakım, montaj, revizyon ve engelli platformu projeleri.">
+    <meta name="keywords"
+        content="kayseri asansör referansları, asansör projeleri, inşaat asansörü, yük asansörü, engelli asansörü kayseri">
+    <link rel="canonical" href="https://www.kutayasansor.com/projects.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.kutayasansor.com/projects.html">
+    <meta property="og:title" content="Kutay Asansör Referanslar ve Projeler">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            transform: translateY(20px);
+            transition: transform 0.3s ease 0.1s;
+        }
+
+        .gallery-overlay p {
+            color: #fff;
+            font-size: 0.9rem;
+            transform: translateY(20px);
+            transition: transform 0.3s ease 0.2s;
+        }
+
+        .gallery-item:hover .gallery-overlay h3,
+        .gallery-item:hover .gallery-overlay p {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Kutay Asansör">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                    <li><a href="services.html">Hizmetler</a></li>
+                    <li><a href="projects.html" class="active">Projeler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" style="padding: 150px 0 80px; text-align: center; background-color: var(--bg-light);">
+        <div class="container">
+            <h1 class="fade-in">REFERANSLARIMIZ</h1>
+            <p class="fade-in text-muted">Bakım ve Modernizasyon Hizmeti Verdiğimiz Bazı Projeler</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="services-grid">
+
+                <!-- Project 1: Residence -->
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3>Lüks Konut Projesi</h3>
+                    <p class="text-muted">Talas, Kayseri</p>
+                    <p>8 Bloklu site için kapsamlı asansör modernizasyonu ve kontrol panosu değişimi.</p>
+                </div>
+
+                <!-- Project 2: Plaza -->
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3>Plaza İş Merkezi</h3>
+                    <p class="text-muted">Kocasinan, Kayseri</p>
+                    <p>Panoramik asansör montajı ve yıllık periyodik bakım anlaşması.</p>
+                </div>
+
+                <!-- Project 3: Construction -->
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <h3>İnşaat Cephe Asansörü</h3>
+                    <p class="text-muted">Melikgazi, Kayseri</p>
+                    <p>Yüksek katlı blok inşaatı için çift kabinli cephe asansörü kurulumu.</p>
+                </div>
+
+                <!-- Project 4: Freight -->
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-dolly"></i>
+                    </div>
+                    <h3>Fabrika Yük Asansörü</h3>
+                    <p class="text-muted">Organize Sanayi Bölgesi</p>
+                    <p>3 Ton kapasiteli, hidrolik sistemli ağır yük asansörü imalatı ve montajı.</p>
+                </div>
+
+                <!-- Project 5: Disabled Platform -->
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fa-brands fa-accessible-icon"></i>
+                    </div>
+                    <h3>Engelli Platformu</h3>
+                    <p class="text-muted">Kamu Binası</p>
+                    <p>Mevcut yapıya uygun, dikey tip engelli asansörü uygulaması.</p>
+                </div>
+
+                <!-- Project 6: Hotel -->
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-hotel"></i>
+                    </div>
+                    <h3>Lüks Otel Projesi</h3>
+                    <p class="text-muted">Şehir Merkezi, Kayseri</p>
+                    <p>5 yıldızlı otelin müşteri ve servis asansörlerinin tam kapsamlı modernizasyonu.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Kutay Asansör</h4>
+                    <p>Güvenli yükselişin adresi. Modern teknoloji ve uzman kadromuzla hizmetinizdeyiz.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i> Kayseri, Türkiye</li>
+                        <li><i class="fa-solid fa-phone" style="margin-right: 10px;"></i> +90 532 295 97 38 </br>
+                            <i class="fa-solid fa-phone" style="margin-right: 10px;"> </i> +90 543 428 71 27
+                        </li>
+                        <li><i class="fa-solid fa-envelope" style="margin-right: 10px;"></i> info@kutayasansor.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Kutay Asansör. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Social Buttons -->
+    <div class="social-floats">
+        <a href="https://www.tiktok.com/@kutay.asansr" class="social-float tiktok-float" target="_blank" rel="nofollow">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://www.instagram.com/kutayasansor" class="social-float instagram-float" target="_blank"
+            rel="nofollow">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/905322959738" class="social-float whatsapp-float" target="_blank" rel="nofollow">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <style>
+        .social-floats {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .social-float {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFF;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float {
+            background-color: #25d366;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+        }
+
+        .instagram-float {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .tiktok-float {
+            background-color: #000;
+        }
+
+        @media(max-width:768px) {
+            .social-floats {
+                bottom: 20px;
+                right: 20px;
+                gap: 10px;
+            }
+
+            .social-float {
+                width: 45px;
+                height: 45px;
+                font-size: 22px;
+            }
+        }
+    </style>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
